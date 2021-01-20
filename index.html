@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app='sample'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Notepad</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="title">NOTEPAD</h2>
+      
+    </header>
+    
+    
+<main>
+    <div class="notes">
+      <ng-view></ng-view>
+      <new-Note></new-Note>
+    </div>
+  </main> 
+
+
+    <a href="#/newNote" id="add" class="addButton" style="text-decoration: none;color: black;" >
+    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="white" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+    </svg>
+  </a>
+  
+
+
+
+
+    <footer><center>&copy; copyright 2020</center></footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+  </body>
+</html>

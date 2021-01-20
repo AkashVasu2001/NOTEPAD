@@ -1,0 +1,22 @@
+<div  ng-controller='MainCtrl'> 
+  
+    <div ng-repeat="item in things track by $index">
+    <div class="note">
+      <div class="note-header" >
+        <div class="note-time">
+         {{item.time | date: "medium"}}
+        </div>
+        <div class="closeIcon"ng-click="remove(item)"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="note-content">
+        <a href="#/newNote/edit/{{item.id}}" style="text-decoration: none; color: black;">{{ item.message | limitTo: 20 }}{{item.message.length > 20 ? '&hellip;' : ''}}</a> 
+      </div>
+    </div>
+    <br>
+    </div>
+  </div>
+  
+  

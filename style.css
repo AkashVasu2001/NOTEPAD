@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d9d9d9;
+  
+}
+
+header{
+  background-color: black;
+  color: #ffffff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+main{
+  display: flex;
+  justify-content: center;
+  height: 570px;
+  
+}
+a:hover{
+  text-decoration: underline;
+}
+div{
+  padding: 10px;
+  display: block;
+}
+.note{
+  background-color: rgb(122, 235, 107);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  max-height: min-content;
+  box-shadow:20px 20px 50px grey; 
+}
+.note-header{
+  border-bottom: block 1px black;
+  background-color: orange;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes{
+  width: 70%;
+  height:590px;
+  border: 1px rgb(148, 34, 255);
+  align-items: center;
+  display: block;
+  margin: 1px;
+  
+ 
+}
+.note-time{
+  margin: 0px;
+  display: inline-flex;
+ 
+}
+.addButton{
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  margin: 2px;
+  padding: 0px;
+
+}
+.closeIcon{
+  padding: 0px;
+  margin: 0px;
+  
+}
+.textarea { font-size: 18px; 
+  box-shadow:20px 20px 50px grey; 
+}
+
+footer{
+  position: fixed;
+  padding: 10px;
+  margin: 1px;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
